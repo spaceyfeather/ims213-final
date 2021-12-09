@@ -1,4 +1,4 @@
-if (mySoil.waterLevel=2) {
+if (mySoil.waterLevel=1) {
 	canGrow=true;
 } else {
 	canGrow=false;
@@ -6,7 +6,7 @@ if (mySoil.waterLevel=2) {
 
 if (canGrow=true) {
 	growthTimer++;
-	if (growthTimer==60) {
+	if (growthTimer==420) {
 		growthLevel=growthLevel+1;
 		growthTimer=0;
 	}
