@@ -1,0 +1,9 @@
+image_speed=0;
+canMove=true;
+playerCanWater=false;
+wateringPause=30;
+startWaterPause=false;
+global.playerWater=100;
+global.playerFlowers=0;
+global.cowboyBought=false;
+global.cowboyEquip=false;

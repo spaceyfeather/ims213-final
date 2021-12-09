@@ -1,0 +1,4 @@
+more hats,
+unequip hat,
+dialogue,
+other two flower types,
