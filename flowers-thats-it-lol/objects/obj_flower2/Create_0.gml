@@ -5,6 +5,5 @@ growthTimer=0;
 growthLevel=0;
 canHarvest=false;
 flowerHarvest=false;
-
 randomize();
 myColor=irandom_range(3, 6);

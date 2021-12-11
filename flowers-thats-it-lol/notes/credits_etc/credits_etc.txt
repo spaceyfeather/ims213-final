@@ -1,0 +1,13 @@
+texttettxtettxe
+
+
+
+
+new things done, a basic summary:
+-moving player between rooms
+---learned that room creation code exists
+-interactive dialogue box(es)
+-player animations
+-objects referencing the ones they're closest to
+-checking distance from objects
+-viewport/camera (which was awesome for me because the sprites are so small)
