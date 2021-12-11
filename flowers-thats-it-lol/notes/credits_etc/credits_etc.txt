@@ -24,6 +24,8 @@ things i wanted to do but no time or energy:
 -have player plant the flowers
 -better transitions between rooms/start-end screens
 -more stuff to do
+-a reason as to why the end is so vague
+-consistent aesthetics
 
 other:
 -aki (player) and score's pronouns are they/them, just like me. :)

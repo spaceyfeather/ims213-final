@@ -11,3 +11,5 @@ if (waterLevel==4) {
 // fucking THANK YOU gamemaker for deleting this event.
 // thank you for deleting the entire fucking thing when i hit undo
 // thank you for fucking up my good mood, my good day, my roll
+
+// ^ that was from the first day working on this and it's too funny for me to delete

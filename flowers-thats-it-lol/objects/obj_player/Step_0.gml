@@ -51,7 +51,7 @@ if (room==room_main) {
 var closestSoil = instance_nearest(x, y, obj_soil);
 var soilDistance = distance_to_object(closestSoil);
 
-if (soilDistance<=40) {
+if (soilDistance<=15) {
 	playerCanWater=true;
 	if (global.playerWater==0) {
 	playerCanWater=false;

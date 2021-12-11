@@ -71,7 +71,7 @@ function zoruaDialogue() {
 	}
 	
 	if (textIndex=3) {
-		textShow="Press space to water flowers, and shift to refill your water.\nCertain flowers grow at certain water levels.\nHarvest fully grown flowers with shift.\nPress shift to stop talking to me.\n(Press (0) to go back to the first line of text.)";
+		textShow="Press space to water flowers, and shift to refill your water.\nCertain flowers grow at certain water levels.\nHarvest fully grown flowers with tab.\nPress shift to stop talking to me.\n(Press (0) to go back to the first line of text.)";
 		if (keyboard_check_pressed(ord(0))) {
 			textIndex=0;
 		}
