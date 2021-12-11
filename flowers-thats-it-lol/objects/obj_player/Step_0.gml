@@ -33,7 +33,15 @@ if (canMove=false) {
 
 if (keyboard_check_released(vk_anykey)) { //doing Any because tired
 	playerMoving=false;
+	audio_stop_sound(snd_step);
 }
+
+if (playerMoving=true) {
+	if (audio_is_playing(snd_step) == false) {
+		audio_play_sound(snd_step, 10, false);
+	}
+}
+
 
 
 // soil stuff

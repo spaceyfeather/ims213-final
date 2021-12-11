@@ -1,5 +1,5 @@
-texttettxtettxe
 
+snd_step = sound of a dog walking, Ocarina of Time (N64)
 
 
 

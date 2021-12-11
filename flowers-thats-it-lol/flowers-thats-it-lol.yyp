@@ -31,6 +31,7 @@
     {"id":{"name":"akis_front_water","path":"sprites/akis_front_water/akis_front_water.yy",},"order":16,},
     {"id":{"name":"aki_right_walk","path":"sprites/aki_right_walk/aki_right_walk.yy",},"order":9,},
     {"id":{"name":"spr_door","path":"sprites/spr_door/spr_door.yy",},"order":12,},
+    {"id":{"name":"snd_step","path":"sounds/snd_step/snd_step.yy",},"order":0,},
     {"id":{"name":"obj_roomMove","path":"objects/obj_roomMove/obj_roomMove.yy",},"order":10,},
     {"id":{"name":"obj_bush","path":"objects/obj_bush/obj_bush.yy",},"order":8,},
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},"order":11,},
