@@ -33,17 +33,20 @@ if (canMove=false) {
 
 if (keyboard_check_released(vk_anykey)) { //doing Any because tired
 	playerMoving=false;
-	audio_stop_sound(snd_step);
 }
 
 if (playerMoving=true) {
-	if (audio_is_playing(snd_step) == false) {
+	stepDelay--;
+		if (stepDelay < 0) {
 		audio_play_sound(snd_step, 10, false);
+		stepDelay=30;
 	}
+} else {
+	stepDelay=-1;
 }
 
 
-
+if (room==room_main) {
 // soil stuff
 var closestSoil = instance_nearest(x, y, obj_soil);
 var soilDistance = distance_to_object(closestSoil);
@@ -84,6 +87,9 @@ if (waterDistance<=40) {
 
 // below makes the player stop briefly to show watering animation
 if (startWaterPause=true) {
+	if (wateringPause==30) {
+		audio_play_sound(snd_water, 9, false);
+	}
 	wateringPause--;
 	if (wateringPause<30) {
 		canMove=false;
@@ -103,6 +109,7 @@ var zoruaDistance = distance_to_object(obj_zorua);
 if (zoruaDistance<=40) {
 	if (keyboard_check_pressed(vk_space)) {
 		obj_zorua.zoruaInteract=true;
+		audio_play_sound(snd_zorua, 8, false);
 	}
 }
 if (obj_zorua.zoruaInteract==true) {
@@ -112,6 +119,7 @@ if (obj_zorua.zoruaInteract==true) {
 		canMove=true;
 	}
 }
+}
 
 /*
 if (global.cowboyBought=true) {
@@ -119,3 +127,27 @@ if (global.cowboyBought=true) {
 		sprite_index=spr_player_cowboy;
 	}
 } */
+
+if (room=room_exit) {
+if (object_exists(obj_door)) {
+	var doorDistance = distance_to_object(obj_door);
+	if (doorDistance<=40) {
+		if (keyboard_check_pressed(vk_space)) {
+			global.doorInteract=true;
+		}
+	}
+	if (global.doorInteract==true) {
+		canMove=false;
+		if (keyboard_check_pressed(vk_shift)) {
+			global.doorInteract=false;
+			canMove=true;
+		}
+	} else {
+		canMove=true;
+	}
+}
+}
+
+if (room=room_end) {
+	canMove=false;
+}

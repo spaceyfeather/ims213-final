@@ -57,11 +57,14 @@ function zoruaDialogue() {
 		if (delayOn=false) {
 			if (keyboard_check_pressed(ord(1))) {
 				if (global.playerFlowers>=7) {
+					textIndex=10;
 					global.ribbonObtained=true;
 					global.playerFlowers=global.playerFlowers-7;
 				}
-				if (global.playerFlowers<3) {
-					textIndex=7;
+				if (!global.ribbonObtained) {
+					if (global.playerFlowers<7) {
+						textIndex=7;
+					}
 				}
 			}
 		}
@@ -126,7 +129,13 @@ function zoruaDialogue() {
 			textIndex=0;
 		}
 	}
-
+	
+	if (textIndex=10) {
+		textShow="There we go. That's a good look on you.";
+		if (keyboard_check_pressed(ord(0))) {
+			textIndex=0;
+		}
+	}
 
 
 

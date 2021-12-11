@@ -1,8 +1,15 @@
+credits
 
 snd_step = sound of a dog walking, Ocarina of Time (N64)
+snd_water = rushing water in The Wind Waker
+snd_zorua = Zorua's cry from Pokemon, gen 6+
+mus_whisker = Whisker Woods, from Petz Catz 2 (Wii)
+mus_dahlia = Distant Traces of Beauty, from Ace Attorney 3 (Trials & Tribulations)
+fnt_igiari = yes i'm using it again. fan-made font of the one seen in Ace Attorney (NDS)
 
 
 
+etc
 new things done, a basic summary:
 -moving player between rooms
 ---learned that room creation code exists
@@ -11,3 +18,12 @@ new things done, a basic summary:
 -objects referencing the ones they're closest to
 -checking distance from objects
 -viewport/camera (which was awesome for me because the sprites are so small)
+-more with sounds
+
+things i wanted to do but no time or energy:
+-have player plant the flowers
+-better transitions between rooms/start-end screens
+-more stuff to do
+
+other:
+-aki (player) and score's pronouns are they/them, just like me. :)
